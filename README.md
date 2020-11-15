@@ -71,6 +71,11 @@ log - Bot Log [owner only]
 ```
 
 # How to deploy?
+
+### The Easiest Way 🦁
+
+         [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 Deploying is pretty much straight forward and is divided into several steps as follows:
 ## Installing requirements
 
@@ -99,8 +104,6 @@ cp config_sample.env config.env
 ```
 _____REMOVE_THIS_LINE_____=True
 
-### The Easiest Way 🦁
-         [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 ```
 Fill up rest of the fields. Meaning of each fields are discussed below:
 - **BOT_TOKEN** : The telegram bot token that you get from @BotFather
