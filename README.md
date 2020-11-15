@@ -98,6 +98,9 @@ cp config_sample.env config.env
 - Remove the first line saying:
 ```
 _____REMOVE_THIS_LINE_____=True
+
+### The Easiest Way 🦁
+         [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 ```
 Fill up rest of the fields. Meaning of each fields are discussed below:
 - **BOT_TOKEN** : The telegram bot token that you get from @BotFather
