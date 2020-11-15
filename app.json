@@ -1,31 +1,24 @@
 {
-    "name": "yt-downloader
+    "name": "GdriveBot"
 ",
     "description": "This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.",
     "repository": "https://github.com/kirodewal/reflector_bot",
     "logo": "https://telegra.ph/file/7fbd251edb568cc4ad3f3.jpg",
     "keywords": [
         "python",
-        "pyrogram",
+        "gdrive",
         "telegram",
         "youtube"
-    ],
-    "image": "heroku/python",
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "env": {
-        "API_ID": {
-            "description": "App api_id from https://my.telegram.org"
-        },
-        "API_HASH": {
-            "description": "App api_hash from https://my.telegram.org"
-        },
-        "BOT_TOKEN": {
-            "description": "Bot token from https://t.me/BotFather"
-        }
+        ],
+   "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "9.6"
+      }
+    }],
+   "buildpacks": [
+    {
+      "url": "heroku/python"
     }
+  ]
 }
