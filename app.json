@@ -1,21 +1,20 @@
 {
-    "name": "GdriveBot"
-",
-    "description": "This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.",
-    "repository": "https://github.com/kirodewal/reflector_bot",
-    "logo": "https://telegra.ph/file/7fbd251edb568cc4ad3f3.jpg",
-    "keywords": [
-        "python",
-        "gdrive",
-        "telegram",
-        "youtube"
-        ],
-   "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "9.6"
-      }
-    }],
+  "name": "GDrive-Uploader-Bot",
+  "description": "This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.",
+  "repository": "https://github.com/kirodewal/reflector_bot",
+  "logo": "https://telegra.ph/file/7fbd251edb568cc4ad3f3.jpg",
+  "keywords": ["Telegram", "Google Drive", "uploader"],
+  "env": {
+      "BOT_TOKEN": {
+      "description": "Get it from @BotFather"
+    },
+    "APP_ID": {
+      "description": "Your API_ID, Get it from https://my.telegram.org/apps"
+    },
+    "API_HASH": {
+      "description": "Your API_HASH, Get it from https://my.telegram.org/apps"
+    }
+   },
    "buildpacks": [
     {
       "url": "heroku/python"
